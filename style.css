@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Kaushan+Script|Old+Standard+TT');
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Kaushan+Script|Old+Standard+TT|Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+
+
+
+body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+}
+
+
+.leftnavbar{
+    padding: 10px 0 0 180px;
+    float:left;
+}
+.leftnavbar a{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 38px;
+    text-decoration: none;
+    color: darkgoldenrod;
+}
+
+
+.rightnavbar{
+    float: right;
+}
+.rightnavbar ul{
+    margin: 27px 120px 8px 0;
+    
+    display: flex;
+}
+.rightnavbar ul li{
+    
+    font-family: 'Poiret One', cursive;
+    list-style: none;
+}
+.rightnavbar ul li a{
+    font-size: 19px;
+    padding: 0 12px 0 12px;
+    text-decoration: none;
+    color: darkslategrey;
+}
+@media screen and (max-width: 480px) {
+    .leftnavbar{
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .leftnavbar a{
+        font-family: 'Kaushan Script', cursive;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    .rightnavbar ul{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .rightnavbar{
+    
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+    .rightnavbar ul li a{
+        font-size: 14px;
+    }
+}
+
+
+
+.sect1{
+    width: 100%;
+    height: 800px;
+    
+}
+
+.sect1left{
+    width: 22%;
+    margin: 90px 0 0 60px;
+    float: left;
+    border: 0px solid black;
+    box-shadow: .1px 20px 20px rgba(0,0,0,0.8);
+    border-radius: 10px;
+    height: 500px;
+    padding: 0 8px 0 8px;
+}
+.imgmeri:hover{
+    transition: .5s;
+    margin: -40px 0 0 0;
+}
+.imgmeri{
+    box-shadow: .1px 20px 20px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    margin: -20px 0 0 0;
+    width: 100%;
+    transition: .5s;
+}
+.info{
+}
+.info ul{
+    display: block;
+    
+}
+.info ul li{
+    list-style: none;
+    padding: 4px 47px 4px 0;
+    text-align: center;
+    color: darkcyan;
+    
+}
+
+.sect1right{
+    border-radius: 14px;
+    width: 60%;
+    height: 434px;
+    float: left;
+    margin: 70px 0 70px 30px;
+    padding: 70px 0 20px 30px;
+    box-shadow: .1px 10px 10px darkgrey;
+    
+}
+.textright{
+    
+    color: darkslategray;
+    font-size: 19px;
+    font-family: 'Quattrocento', serif;
+}
+
+
+.folllow{
+    padding: 50px 40px 60px 120px;
+}
+.folllow ul li{
+    border: 0px solid black;
+    padding: 4px 4px 4px 4px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.7) ;
+    border-radius: 7px;
+}
+.folllow ul li:hover{
+    transition: .5s;
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.7) ;
+}
+.folllow ul{
+    display: flex;
+}
+.folllow ul li{
+    list-style: none;
+}
+.folllow ul li a{
+    border-radius: 7px;
+    font-size: 24px;
+    border: 0px solid black;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.6);
+    padding: 1px 38px 1px 38px;
+    color: darkslategrey;
+}
+.folllow ul li a:hover{
+    transition: .5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.6) inset;
+    margin: 0 0 1px 0;
+}
+
+
+
+
+.textmore{
+    font-size: 22px;
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    
+}
+.proarrow{
+    text-align: center;
+    padding: 40px 0 0 0;
+    
+}
+.proarrow a{
+    font-size: 37px;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .sect1{
+    width: 100%;
+    height: 400px;
+    
+    }
+    .sect1left{
+    width: 65%;
+    margin: 90px 60px 30px 60px;
+    }
+    .info ul li{
+    font-size: 14px;
+    padding: 4px 30px 4px 1px;
+    text-align: center;
+    color: darkcyan;
+    
+    }
+    
+    .sect1right{
+    width: 80%;
+    padding: 20px 10px 0 10px;
+        
+    }
+    .textright{
+    font-size: 15px;
+    }
+    .folllow{
+        display: flex;
+        margin: 0 0 0 -164px;
+        box-shadow: none;
+    }
+    .folllow ul li{
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+    }
+    .textmore{
+    font-size: 14px;
+}
+
+}
+
+
+
+
+
+
+
+
+.sect4{
+    width: 100%;
+    height: 1000px;
+    
+}
+.sect4 a{
+    width: 100%;
+    height: 50px;
+    font-size: 36px;
+    float: left;
+    text-align: center;
+}
+.mainpro{
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    font-size: 14px;
+}
+.talkleft{
+    float: left;
+    width: 22%;
+    height: 600px;
+    border: 1px solid black;
+    margin: 50px 41px 100px 41px;
+    box-shadow: .1px 20px 20px rgba(0,0,0,0.8);
+    border-radius: 10px;
+    padding: 0 20px 0 20px;
+}
+.talkmiddle{
+    float: left;
+    width: 29%;
+    height: 600px;
+    border: 1px solid black;
+    margin: 100px 41px 50px 41px;
+    box-shadow: .1px 20px 20px rgba(0,0,0,0.8);
+    border-radius: 10px;
+    padding: 0 20px 0 20px;
+}
+.talkright{
+    float: left;
+    width: 22%;
+    height: 600px;
+    border: 1px solid black;
+    margin: 50px 41px 100px 41px;
+    box-shadow: .1px 20px 20px rgba(0,0,0,0.8);
+    border-radius: 10px;
+    padding: 0 20px 0 20px;
+}
+
+.imgmeri1{
+    box-shadow: .1px 20px 20px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    margin: -20px 0 0 0;
+    width: 100%;
+    transition: .5s;
+}
+.imgmeri1:hover{
+    transition: .5s;
+    margin: -30px 0 0 0;
+}
+.imgmeri2{
+    box-shadow: .1px 20px 20px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    margin: -20px 0 0 0;
+    width: 100%;
+    transition: .5s;
+}
+.imgmeri2:hover{
+    transition: .5s;
+    margin: -30px 0 0 0;
+}
+.info1 a{
+    text-decoration: none;
+    font-size: 23px;
+    padding: 50px 0 0 0;
+    color: darkcyan;
+}
+.info1 a:hover{
+    color: darkred;
+}
+.info1 p{
+    text-decoration: none;
+    font-size: 19px;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 480px) {
+    .mainpro a{
+        width: 100%;
+        height: 80px;
+    }
+    .mainpro{
+        width: 93%;
+        margin: auto;
+        margin: 20px 0 100px 0;
+    }
+.talkleft{
+    width: 68%;
+    
+}
+.talkmiddle{
+    width: 68%;
+    
+}
+.talkright{
+    width: 68%;
+    
+}
+    
+    
+    
+    
+    
+}
+
+.contentright1{
+    width: 100%;
+    height: 1000px;
+    font-size: 30px;
+    text-align: center;
+}
+.container1{
+    width: 100%;
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+.sameform{
+    width: 600px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin: 20px auto;
+}
+.submitbtn{
+    border: 0px solid black;
+    padding: 10px 90px 10px 90px;
+    border-radius: 10px;
+    box-shadow: 1px 10px 10px darkcyan;
+    transition: .5s;
+}
+.submitbtn:hover{
+    transition: .5s;
+    box-shadow: 1px 5px 5px darkcyan;
+}
+
+@media screen and (max-width: 480px) {
+   
+  .contentright1{
+    display: none;
+}
+   
+    
+    
+}
+
+
+
+
+
+
+.sect5{
+    width: 100%;
+    height: 70px;
+}
+.footer1{
+    text-align: center;
+    font-size: 20px;
+    padding: 22px 0 0 0;
+}
+
+@media screen and (max-width: 480px) {
+   
+   .sect5{
+    width: 100%;
+    height: 50px;
+}
+.footer1{
+    text-align: center;
+    font-size: 12px;
+    padding: 22px 0 0 0;
+} 
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
