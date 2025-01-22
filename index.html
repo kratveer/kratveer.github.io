@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Kratveer Singh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="profile.jpg" alt="Profile" class="profile-img">
+        <ul class="menu">
+            <li><a href="#" data-section="about">About Me</a></li>
+            <li><a href="#" data-section="research">Current Research</a></li>
+            <li><a href="#"data-section="publications">Publications</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <!-- About Section -->
+        <div id="about" class="section active">
+            <div class="about-me">
+            <h1>Kratveer Singh</h1>
+            <div id="introduction">
+              <ul class="intro-list">
+                <li>I am currently work as a researcher in the Department of Optics at Palacky University Olomouc. My focus is in experimental realization of motion of Trapped Calcium ions.  </li>
+                <li>
+                  <div id ="social" class="social-icons">
+         <a href="https://facebook.com" target="_blank" class="social-icon facebook">
+         <i class="fab fa-facebook-f"></i></a>
+         <a href="https://twitter.com" target="_blank" class="social-icon twitter">
+         <i class="fab fa-twitter"></i></a>
+         <a href="https://instagram.com" target="_blank" class="social-icon instagram">
+         <i class="fab fa-github"></i></a>
+         <a href="https://linkedin.com" target="_blank" class="social-icon linkedin">
+             <i class="fab fa-linkedin-in"></i></a>
+         <a href="https://youtube.com" target="_blank" class="social-icon youtube">
+         <i class="fab fa-researchgate"></i></a>
+        </div>
+                  </li>
+                
+              </ul>
+             
+            </div>
+            </div>
+            
+           
+        
+        </div> 
+
+        <!-- Research Section -->
+        <div id="research" class="section">
+            <h1>Research</h1>
+            <ul class="research-list">
+                <li>
+                    <h3>Classical Communications with Indefinite Causal Order for N completely depolarizing channels</h3>
+                    <p><strong>Sk Sazim · Kratveer Singh · Arun Kumar Pati</strong></p>
+                    <p>In the presence of indefinite causal order, two identical copies of a completely depolarizing channel can transmit non-zero information. This arises due to quantum superposition of two alternative orders of quantum channels. Here, we address the question: Can we transmit perfect classical information with superposition..</p>
+                    <button class="view-article-btn" data-article="1">View Article</button>
+                </li>
+                <li>
+                    <h3>Monogamy of Quantum Privacy</h3>
+                    <p><strong>Arun Kumar Pati · Kratveer Singh · Manish Kumar Gupta</strong></p>
+                    <p>Quantum mechanics ensures that the information stored in a quantum state is secure and the ability to send private information through a quantum channel is at least as great as the coherent information. We derive trade- off relations between quantum privacy, information gain by Eve and the disturbance caused by Eve to the quantum state that is being sent through a noisy channel. For tripartite quantum states, we show that monogamy of privacy exists in the case of a single sender and multiple receivers. When Alice prepares a tripartite...</p>
+                    <button class="view-article-btn" data-article="2">View Article</button>
+                </li>
+                <li>
+                    <h3>Quantum Correlation and Its Measures</h3>
+                    <p><strong>Kratveer Singh · Auditya Sharma</strong></p>
+                    <p>We study an important measure of correlation i.e., quantum discord, that uses the Von Neumann Entropy to determine the correlation analytically for general states. A quantum state can possess the classical as well as quantum correlation where the difference of it results in quantumness of correlation. We do a detailed study of quantum discord, a difference in two classically equivalent forms of mutual information, introduced by Ollivier and Zurek. We furthermore....</p>
+                    <button class="view-article-btn" data-article="3">View Article</button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Publications Section -->
+        <div id="publications" class="section">
+            <h1>Publications</h1>
+            <p>List of publications and contributions will be listed here.</p>
+        </div>
+    </div>
+
+    <!-- Popup for Article -->
+    <div id="article-popup" class="article-popup">
+        <div class="popup-content">
+            <button id="close-article-popup" class="close-popup">Close</button>
+            <h1 id="popup-title">Classical Communications with Indefinite Causal Order for N completely depolarizing channels</h1>
+            <p id="popup-details">In the presence of indefinite causal order, two identical copies of a completely depolarizing channel can transmit non-zero information. This arises due to quantum superposition of two alternative orders of quantum channels. Here, we address the question: Can we transmit perfect classical information with superposition..</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
