@@ -1,51 +1,42 @@
-const menuLinks = document.querySelectorAll('.menu a');
-const sections = document.querySelectorAll('.section');
-const viewArticleButtons = document.querySelectorAll('.view-article-btn');
-const articlePopup = document.getElementById('article-popup');
-const closeArticlePopup = document.getElementById('close-article-popup');
-const popupTitle = document.getElementById('popup-title');
-const popupDetails = document.getElementById('popup-details');
+// Smooth popup open
+function openPopup(popupId) {
+    const popup = document.getElementById(popupId);
+    popup.style.display = 'flex';
 
-// Sample data for articles
-const articles = {
-    1: {
-        title: "Classical Communications with Indefinite Causal Order for N completely depolarizing channels",
-        details: "In the presence of indefinite causal order, two identical copies of a completely depolarizing channel can transmit non-zero information. This arises due to quantum superposition of two alternative orders of quantum channels. Here, we address the question: Can we transmit perfect classical information with superposition.."
-    },
-    2: {
-        title: "Article 2: Analysis and Findings",
-        details: "This is the detailed content of Article 2. It explores findings and provides analysis on the research work."
+    requestAnimationFrame(() => {
+        popup.classList.add('show');
+    });
+
+    document.body.style.overflow = 'hidden';
+}
+
+// Smooth popup close
+function closePopup(popupId) {
+    const popup = document.getElementById(popupId);
+    popup.classList.remove('show');
+
+    setTimeout(() => {
+        popup.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }, 350);
+}
+
+// Close when clicking outside popup
+window.addEventListener('click', (e) => {
+    if (e.target.classList.contains('popup')) {
+        closePopup(e.target.id);
     }
-};
+});
 
-// Menu Navigation
-menuLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const sectionId = link.getAttribute('data-section');
+// Section reveal on scroll
+const sections = document.querySelectorAll('.section');
 
-        sections.forEach(section => {
-            section.classList.remove('active');
-        });
-
-        document.getElementById(sectionId).classList.add('active');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
     });
-});
+}, { threshold: 0.15 });
 
-// Open Article Popup
-viewArticleButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const articleId = button.getAttribute('data-article');
-        popupTitle.textContent = articles[articleId].title;
-        popupDetails.textContent = articles[articleId].details;
-
-        articlePopup.classList.remove('close');
-        articlePopup.classList.add('open');
-    });
-});
-
-// Close Article Popup
-closeArticlePopup.addEventListener('click', () => {
-    articlePopup.classList.remove('open');
-    articlePopup.classList.add('close');
-});
+sections.forEach(section => observer.observe(section));
